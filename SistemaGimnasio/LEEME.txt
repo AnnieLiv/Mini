@@ -1,0 +1,13 @@
+SISTEMA DE GESTION DE GIMNASIO (Java)
+
+src/            -> las 7 clases del sistema (Persona, Socio, Entrenador, Membresia, Rutina, Ejercicio, Main)
+pruebas/        -> PruebasGimnasio.java (pruebas sin librerias)
+pruebas_junit/  -> GimnasioTest.java (pruebas con JUnit 5, requiere agregar JUnit al proyecto)
+
+Ejecutar el programa (desde la carpeta SistemaGimnasio):
+  javac -encoding UTF-8 -d out src/*.java
+  java -cp out Main
+
+Ejecutar las pruebas sin librerias:
+  javac -encoding UTF-8 -d out src/Persona.java src/Ejercicio.java src/Rutina.java src/Membresia.java src/Socio.java src/Entrenador.java pruebas/PruebasGimnasio.java
+  java -cp out PruebasGimnasio
